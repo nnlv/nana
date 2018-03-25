@@ -1,0 +1,34 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1521287081;s:6:"expire";i:1521290681;s:4:"tags";s:46:"ea6_BLOCK_HTML,ea6_CAT_P_12,ea6_CAT_P,ea6_MAGE";}
+<div class="swatch-opt-12"></div>
+<script>
+    require([
+        'jquery',
+        'jquery/ui',
+        'Magento_Swatches/js/swatch-renderer',
+        'Magento_Swatches/js/catalog-add-to-cart',
+        'priceBox'
+    ], function ($) {
+        var jsonConfig = {"attributes":{"140":{"id":"140","code":"attr_6d5bb64a","label":"\u7d20\u6750","options":[{"id":"8","label":"\u30b7\u30eb\u30af","products":["15","16"]},{"id":"9","label":"\u30b5\u30c6\u30f3","products":["17","18"]},{"id":"10","label":"\u30c1\u30e5\u30fc\u30eb","products":["19","20"]}],"position":"0"},"141":{"id":"141","code":"neckline","label":"\u30cd\u30c3\u30af\u30e9\u30a4\u30f3","options":[{"id":"11","label":"\u30e9\u30a6\u30f3\u30c9\u30e9\u30a4\u30f3","products":["15","17","19"]},{"id":"12","label":"\u30b9\u30af\u30a8\u30a2\u30e9\u30a4\u30f3","products":["16","18","20"]}],"position":"1"}},"template":"\uffe5<%- data.price %>","currencyFormat":"\uffe5%s","optionPrices":{"15":{"oldPrice":{"amount":1000},"basePrice":{"amount":1000},"finalPrice":{"amount":1000},"tierPrices":[]},"16":{"oldPrice":{"amount":1100},"basePrice":{"amount":1100},"finalPrice":{"amount":1100},"tierPrices":[]},"17":{"oldPrice":{"amount":700},"basePrice":{"amount":700},"finalPrice":{"amount":700},"tierPrices":[]},"18":{"oldPrice":{"amount":800},"basePrice":{"amount":800},"finalPrice":{"amount":800},"tierPrices":[]},"19":{"oldPrice":{"amount":500},"basePrice":{"amount":500},"finalPrice":{"amount":500},"tierPrices":[]},"20":{"oldPrice":{"amount":600},"basePrice":{"amount":600},"finalPrice":{"amount":600},"tierPrices":[]}},"priceFormat":{"pattern":"\uffe5%s","precision":"0","requiredPrecision":"0","decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":-4},"prices":{"oldPrice":{"amount":500},"basePrice":{"amount":500},"finalPrice":{"amount":500}},"productId":"12","chooseText":"\u30aa\u30d7\u30b7\u30e7\u30f3\u3092\u9078\u629e\u3057\u3066\u304f\u3060\u3055\u3044...","images":[],"index":{"15":{"140":"8","141":"11"},"16":{"140":"8","141":"12"},"17":{"140":"9","141":"11"},"18":{"140":"9","141":"12"},"19":{"140":"10","141":"11"},"20":{"140":"10","141":"12"}}};
+
+        $('.swatch-opt-12').SwatchRenderer({
+            selectorProduct: '.product-item-details',
+            onlySwatches: true,
+            enableControlLabel: false,
+            numberToShow: 16,
+            jsonConfig: jsonConfig,
+            jsonSwatchConfig: [],
+            mediaCallback: 'http://13.114.29.28/magento2/swatches/ajax/media/'
+        });
+
+        var dataPriceBoxSelector = '[data-role=priceBox]',
+            dataProductIdSelector = '[data-product-id=12]',
+            priceBoxes = $(dataPriceBoxSelector + dataProductIdSelector);
+
+        priceBoxes.priceBox({
+            'priceConfig': {
+                priceFormat: jsonConfig.priceFormat,
+                prices: jsonConfig.prices
+            }
+        });
+    });
+</script>

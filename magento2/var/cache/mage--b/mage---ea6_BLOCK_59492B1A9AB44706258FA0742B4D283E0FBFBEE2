@@ -1,0 +1,6 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1521287087;s:6:"expire";i:1521290687;s:4:"tags";s:57:"ea6_BLOCK_HTML,ea6_CAT_C,ea6_CAT_C_3,ea6_CAT_C_4,ea6_MAGE";}
+
+<nav class="navigation" data-action="navigation">
+    <ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
+        <li  class="level0 nav-1 first level-top parent"><a href="http://13.114.29.28/magento2/wedding.html"  class="level-top" ><span>ウエディングドレス</span></a><ul class="level0 submenu"><li  class="level1 nav-1-1 first last"><a href="http://13.114.29.28/magento2/wedding/orderdress.html" ><span>オーダーメイド</span></a></li></ul></li><li  class="level0 nav-2 last level-top parent"><a href="http://13.114.29.28/magento2/kids.html"  class="level-top" ><span>子供服</span></a><ul class="level0 submenu"><li  class="level1 nav-2-1 first"><a href="http://13.114.29.28/magento2/kids/ch01.html" ><span>2-6歳</span></a></li><li  class="level1 nav-2-2 last"><a href="http://13.114.29.28/magento2/kids/ch02.html" ><span>7-12</span></a></li></ul></li>            </ul>
+</nav>

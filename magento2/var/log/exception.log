@@ -1,0 +1,1 @@
+[2018-03-13 14:13:50] main.CRITICAL: Invalid URL key {"exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): Invalid URL key at /var/www/html/magento2/vendor/magento/module-catalog-url-rewrite/Observer/CategoryUrlPathAutogeneratorObserver.php:61)"} []
